@@ -8,17 +8,17 @@ If you like this library, please consider [making a donation](https://www.paypal
 
 ## About
 
-Really simple library with pure vanilla javascript, no jQuery involved. It's just 1.0 kB minified and 0.4 kB gzipped.
+**Filesize:** 0.4 kB gzipped
+
+Really simple library with pure vanilla javascript, no jQuery involved.
 
 - Supports accessability with aria attributes
 - Supports options
+- Supports animations
+- Supports multiple styles
+- Supports position
 
-1. The first time the user is visiting the page, the user will see a dialog box.
-1. If the user click the accept button, the script that contains cookies will always be loaded from now on.
-1. If the user click the cancel button, the script that contains cookies will never be loaded from now on.
-1. On the next visit, no matter which button the visitor previously clicked on, the dialog box is not shown again.
-
-To rememder the choice made by the user, local storage is used.
+To remember the choice made by the user, local storage is used.
 
 ## Setup
 
@@ -30,10 +30,14 @@ Add the stylesheet.
 
 Add the confirm box. To just make it work, not much HTML is required.
 
+```html
 <div id="ecc" hidden>
   <button data-accept>Accept</button>
   <button data-cancel>Decline</a>
 </div>
+```
+
+Add the javascript.
 
 ```html
 <script src="assets/js/dist/script.js"></script>
@@ -49,7 +53,13 @@ Add the confirm box. To just make it work, not much HTML is required.
 
 In the [examples folder](examples) folder you can find complete examples.
 
+### `style-box.html`
+
 By default the dialog will appear at the bottom, but if you add the class `ecc-top` it will be placed at the top instead.
+
+### `style-no.html`
+
+No style and minimal html is added. It just shows two buttons. However it's still fully functional. You can use it as a starting point if you want to create something from scratch.
 
 ## Options
 

@@ -5,7 +5,6 @@ body {
 
 #ecc {
   --color-accept: #000;
-  --color-link: #000;
   background: #fff;
   max-width: 400px;
   position: fixed;
@@ -53,4 +52,4 @@ body {
     background: var(--color-accept);
     color: #fff; }
   #ecc [data-cancel] {
-    border: 2px solid #000; }
+    border: 2px solid var(--color-accept); }

@@ -15,13 +15,12 @@ var css = {
 var js = {
   src: "assets/js/src/**/*.js",
   dest: "assets/js/dist",
-  filename: "script.js"
+  filename: "eu-cookie-confirm.js"
 };
 
 function style() {
   return gulp
     .src(css.src)
-    .pipe(concat(css.filename))
     .pipe(sass())
     .on("error", sass.logError)
     .pipe(autoprefixer())

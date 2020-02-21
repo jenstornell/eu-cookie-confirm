@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eu Cookie Confirm</title>
 
-    <link rel="stylesheet" href="../assets/css/dist/style.css" />
+    <link rel="stylesheet" href="../assets/css/dist/style-box.css" />
   </head>
   <body>
     <div id="ecc" class="ecc-top" role="dialog" aria-labelledby="ecc-title" aria-describedby="ecc-description" hidden>
@@ -22,9 +22,9 @@
       <p class="ecc-more"><a href="#">Learn more</a>.</p>
     </div>
 
-    <script src="../assets/js/dist/script.js"></script>
+    <script src="../assets/js/dist/eu-cookie-confirm.js"></script>
     <script>
-      let ecc = new euCookieConfirm({
+      const ecc = new euCookieConfirm({
         localStorageName: 'ecc',
         selectorClose: '[data-cancel]',
         selectorAccept: '[data-accept]',
