@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eu Cookie Confirm</title>
 
-    <link rel="stylesheet" href="assets/css/dist/style.css" />
+    <link rel="stylesheet" href="../assets/css/dist/style.css" />
   </head>
   <body>
-    <div id="ecc" role="dialog" aria-labelledby="ecc-title" aria-describedby="ecc-description" hidden>
+    <div id="ecc" class="ecc-top" role="dialog" aria-labelledby="ecc-title" aria-describedby="ecc-description" hidden>
       <h3 id="ecc-title">We use cookies</h3>
       <p id="ecc-description">
         Cookies help us deliver our services. By accepting you agree to our use of cookies.
@@ -22,7 +22,7 @@
       <p class="ecc-more"><a href="#">Learn more</a>.</p>
     </div>
 
-    <script src="assets/js/dist/script.js"></script>
+    <script src="../assets/js/dist/script.js"></script>
     <script>
       let ecc = new euCookieConfirm({
         localStorageName: 'ecc',
@@ -31,7 +31,7 @@
         selectorMessage: '#ecc'
       });
       ecc.script(() => {
-        console.log('running');
+        console.log('Could be Google Analytics running.');
       })
     </script>
   </body>

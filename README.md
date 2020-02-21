@@ -20,49 +20,36 @@ Really simple library with pure vanilla javascript, no jQuery involved. It's jus
 
 To rememder the choice made by the user, local storage is used.
 
-## Demos
-
 ## Setup
 
-Instead of going step by step, I give you a full example.
+Add the stylesheet.
 
 ```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eu Cookie Confirm</title>
-
-    <link rel="stylesheet" href="assets/css/dist/style.css" />
-  </head>
-  <body>
-
-    <!-- EU COOKIE CONFIRM HTML - Starts -->
-    <div id="ecc" hidden>
-      <div class="ecc-message">
-        <h3>We use cookies</h3>
-        <p>
-          A short text <a href="#">about cookies</a>.
-        </p>
-      </div>
-      <div class="ecc-buttonset">
-        <button data-accept>Accept</button>
-        <button data-cancel>Decline</a>
-      </div>
-    </div>
-    <!-- EU COOKIE CONFIRM HTML - Ends -->
-
-    <script src="assets/js/dist/script.js"></script>
-    <script>
-      let ecc = new euCookieConfirm();
-      ecc.script(() => {
-        console.log('Place your script here.');
-      })
-    </script>
-  </body>
-</html>
+<link rel="stylesheet" href="assets/css/dist/style.css" />
 ```
+
+Add the confirm box. To just make it work, not much HTML is required.
+
+<div id="ecc" hidden>
+  <button data-accept>Accept</button>
+  <button data-cancel>Decline</a>
+</div>
+
+```html
+<script src="assets/js/dist/script.js"></script>
+<script>
+  let ecc = new euCookieConfirm();
+  ecc.script(() => {
+    console.log("Place your script here, for example Google Analytics.");
+  });
+</script>
+```
+
+## Examples
+
+In the [examples folder](examples) folder you can find complete examples.
+
+By default the dialog will appear at the bottom, but if you add the class `ecc-top` it will be placed at the top instead.
 
 ## Options
 

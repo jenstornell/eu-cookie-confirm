@@ -14,7 +14,13 @@ body {
   left: 50%;
   transform: translate(-50%, 0);
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
-  transition: all 150ms ease-in; }
+  transition: all 150ms ease-in;
+  /* Place the dialog at the top */ }
+  #ecc.ecc-top {
+    top: 0;
+    bottom: auto; }
+    #ecc.ecc-top[hidden] {
+      transform: translate(-50%, -100%); }
   #ecc[hidden] {
     display: block;
     transform: translate(-50%, 100%); }
