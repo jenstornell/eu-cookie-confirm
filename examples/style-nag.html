@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eu Cookie Confirm</title>
 
-    <link rel="stylesheet" href="../assets/css/dist/style-box.css" />
+    <link rel="stylesheet" href="../assets/css/dist/style-nag.css" />
     <style>
       /* Reset */
       body {
@@ -16,18 +16,11 @@
     </style>
   </head>
   <body>
-    <div id="ecc" class="ecc-top" role="dialog" aria-labelledby="ecc-title" aria-describedby="ecc-description" hidden>
-      <h3 id="ecc-title">We use cookies</h3>
-      <p id="ecc-description">
-        Cookies help us deliver our services. By accepting you agree to our use of cookies.
-      </p>
-      
-      <div class="ecc-buttonset">
-        <button data-accept>Accept</button>
+    <div id="ecc" class="ecc-top" hidden>
+      <p>
+        Cookies help us deliver our services. By accepting you agree to our use of cookies. <a href="#">Learn more</a> <button data-accept>Accept</button>
         <button data-cancel>Decline</a>
-      </div>
-
-      <p class="ecc-more"><a href="#">Learn more</a>.</p>
+      </p>
     </div>
 
     <script src="../assets/js/dist/eu-cookie-confirm.js"></script>

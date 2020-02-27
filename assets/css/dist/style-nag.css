@@ -1,0 +1,42 @@
+#ecc {
+  --color-primary: #000;
+  z-index: 100000;
+  background: #fff;
+  width: 100%;
+  position: fixed;
+  padding: 0.5rem;
+  bottom: 0;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  transition: all 150ms ease-in;
+  /* Animate */
+  /* Position top */ }
+  #ecc.ecc-top {
+    top: 0;
+    bottom: auto; }
+    #ecc.ecc-top[hidden] {
+      transform: translate(0, calc(-100% - 1rem)); }
+  #ecc[hidden] {
+    display: block;
+    transform: translate(0, calc(100% + 1rem)); }
+  #ecc h3 {
+    margin: 0;
+    margin-bottom: 1rem;
+    font-size: 1.5rem; }
+  #ecc p {
+    margin: 0;
+    line-height: 1.7;
+    font-size: 0.875rem;
+    color: rgba(0, 0, 0, 0.75); }
+    #ecc p a {
+      color: inherit;
+      margin-right: 0.5rem; }
+  #ecc button {
+    all: unset;
+    padding: 0 0.5rem;
+    border: 2px solid transparent;
+    border-radius: 0.25rem; }
+  #ecc [data-accept] {
+    background: var(--color-primary);
+    color: #fff; }
+  #ecc [data-cancel] {
+    border-color: var(--color-primary); }

@@ -1,6 +1,6 @@
 # EU Cookie Confirm
 
-_Version 3.0_ - See the [changelog](docs/CHANGELOG.md)
+_Version 1.0_ - See the [changelog](docs/CHANGELOG.md)
 
 If you like this library, please consider [making a donation](https://www.paypal.me/DevoneraAB) to support my work.
 
@@ -19,6 +19,16 @@ Really simple library with pure vanilla javascript, no jQuery involved.
 - Supports position
 
 To remember the choice made by the user, local storage is used.
+
+## Demos
+
+You can make the html and css how you like, but here are some demos for inspiration.
+
+- [Style box](https://csspoo.com/eu-cookie-confirm/examples/style-box.html)
+- [Style nag](https://csspoo.com/eu-cookie-confirm/examples/style-nag.html)
+- [No style](https://csspoo.com/eu-cookie-confirm/examples/style-no.html)
+
+You can also get them in [examples](examples).
 
 ## Setup
 

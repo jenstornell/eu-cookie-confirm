@@ -1,10 +1,6 @@
-body {
-  margin: 0;
-  font-family: arial;
-  background: #eee; }
-
 #ecc {
-  --color-accept: #000;
+  --color-primary: #000;
+  z-index: 100000;
   background: #fff;
   max-width: 400px;
   position: fixed;
@@ -14,7 +10,8 @@ body {
   transform: translate(-50%, 0);
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
   transition: all 150ms ease-in;
-  /* Place the dialog at the top */ }
+  /* Animate */
+  /* Position top */ }
   #ecc.ecc-top {
     top: 0;
     bottom: auto; }
@@ -49,7 +46,7 @@ body {
     #ecc .ecc-buttonset > :first-child {
       margin-right: 0.5rem; }
   #ecc [data-accept] {
-    background: var(--color-accept);
+    background: var(--color-primary);
     color: #fff; }
   #ecc [data-cancel] {
-    border: 2px solid var(--color-accept); }
+    border: 2px solid var(--color-primary); }
