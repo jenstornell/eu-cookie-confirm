@@ -63,7 +63,7 @@ Add the javascript.
 
 In the [examples folder](examples) folder you can find complete examples.
 
-### `style-box.html`
+### `style-box.html` and `style-nav.html`
 
 By default the dialog will appear at the bottom, but if you add the class `ecc-top` it will be placed at the top instead.
 
